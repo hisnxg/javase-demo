@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--全局参数  使用于处理乱码，配置utf-8-->
+    <context-param>
+        <param-name>mycontext</param-name>
+        <param-value>myparam全局参数</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>a1</servlet-name>
+        <servlet-class>com.nxg.demo.TestServlet</servlet-class>
+        <!--局部参数  -->
+        <init-param>
+            <param-name>myparam</param-name>
+            <param-value>myparam参数</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>a1</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>b1</servlet-name>
+        <servlet-class>com.nxg.demo.UserServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>b1</servlet-name>
+        <url-pattern>/testrequest</url-pattern>
+    </servlet-mapping>
+</web-app>

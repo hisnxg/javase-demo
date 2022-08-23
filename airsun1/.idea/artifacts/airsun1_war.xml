@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="airsun1:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/airsun1_war</output-path>
+    <root id="archive" name="airsun1_war.war">
+      <element id="artifact" artifact-name="airsun1:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.16.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.66.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jastlTest.iml" filepath="$PROJECT_DIR$/jastlTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loginDemo/loginDemo.iml" filepath="$PROJECT_DIR$/loginDemo/loginDemo.iml" />
+    </modules>
+  </component>
+</project>

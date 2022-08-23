@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SunshineAirlines">
+    <output-path>$PROJECT_DIR$/out/artifacts/SunshineAirlines</output-path>
+    <root id="archive" name="SunshineAirlines.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="airsun1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.16.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.66.jar" />
+        </element>
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/web" />
+      <element id="javaee-facet-resources" facet="airsun1/web/Web" />
+    </root>
+  </artifact>
+</component>

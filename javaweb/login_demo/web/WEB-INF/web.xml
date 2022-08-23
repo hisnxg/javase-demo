@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <session-config>
+        <!--单位是分钟-->
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <filter>
+        <filter-name>f1</filter-name>
+        <filter-class>com.nxg.util.FirstFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>f1</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>f2</filter-name>
+        <filter-class>com.nxg.util.SecondFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>f2</filter-name>
+        <url-pattern>/login</url-pattern>
+    </filter-mapping>
+    <listener>
+        <listener-class>com.nxg.util.ListenerDemo</listener-class>
+    </listener>
+</web-app>
